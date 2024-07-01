@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gevira Puqi</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        overflow: hidden;
+      }
+      .container {
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+      }
+      h1 {
+        font-size: 5em;
+        letter-spacing: 10px;
+        text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        margin: 0;
+      }
+      .glow {
+        font-size: 3em;
+        color: #fff;
+        text-align: center;
+        animation: glow 1.5s infinite alternate;
+      }
+      .sparkle {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+        animation: sparkle 2s linear infinite;
+      }
+      @keyframes glow {
+        0% {
+          text-shadow: 0 0 20px #ff47da, 0 0 30px #ff47da, 0 0 40px #ff47da;
+        }
+        100% {
+          text-shadow: 0 0 30px #ff47da, 0 0 40px #ff47da, 0 0 50px #ff47da;
+        }
+      }
+      @keyframes sparkle {
+        0% {
+          transform: translate(-50px, -50px) scale(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(50px, 50px) scale(1);
+          opacity: 0;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>GEVIRA PUQI</h1>
+      <div class="glow">Keren & Indah</div>
+    </div>
+
+    <div class="sparkle" style="top: 10%; left: 20%"></div>
+    <div class="sparkle" style="top: 30%; left: 80%"></div>
+    <div class="sparkle" style="top: 50%; left: 50%"></div>
+    <div class="sparkle" style="top: 70%; left: 10%"></div>
+    <div class="sparkle" style="top: 90%; left: 90%"></div>
+  </body>
+</html>
